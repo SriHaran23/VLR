@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            #box{
+                width: 500px;
+                height: 500px;
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div><p id="box"></p></div>
+        <button id="b1" onclick="chg1()">Toggle</button>
+        <script>
+            var i=0;
+            function a(){
+                var box= document.getElementById("box");
+                box.style.backgroundColor= 'yellow';
+                i++;
+            } 
+
+            function b(){
+                var box= document.getElementById("box");
+                box.style.backgroundColor= 'white';
+                i--;
+            }
+            
+            function chg1(){
+                if(i<1){
+                    butt2= a();
+                }
+                else{
+                    butt2= b();
+                }
+            }            
+        </script>
+    </body>
+</html>

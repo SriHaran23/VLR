@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            function pal(a){
+                var b, sum = 0, temp=a;
+                while(temp>0){
+                    b = temp % 10;
+                    sum = sum * 10 + b;
+                    temp = parseInt(temp / 10);
+                }
+                if(sum===a){
+                    return a+" is palindrome number";
+                }
+                else{
+                    return a+" is not a palindrome number";
+                }
+            }
+            var x = pal( +prompt());
+            console.log(x);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+  <head>
+      <style>
+        .list{
+          margin: 2px;
+        }
+      </style>
+  </head>
+  <body>
+    <div>
+      <h2 style="padding: 10px;">Todo list</h2>
+        <input type="text" id="input" placeholder="">      
+      <button onclick="listitem()">Add</button>
+    </div>
+    <ul id="list">
+    </ul>
+
+    <script>
+                    function listitem(){
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("input").value;
+        var a = document.createTextNode(inputValue);
+        var delbtn= document.createElement('btn')
+        li.appendChild(a);
+        if (inputValue === '') {
+            alert("You must write something!");
+        } else {
+          document.getElementById("list").appendChild(li);                
+          delbtn.innerText = 'Delete'
+          delbtn.addEventListener('click', event => inputvalue.removeChild(li))
+          delbtn.style.border= '2px solid'
+          delbtn.style.marginLeft='50px'
+          li.appendChild(a);
+          li.appendChild(delbtn);
+          inputValue="";
+        }
+        document.getElementById("input").value = "";            
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+            var n,s=0,r=0,temp;
+            n=+prompt();
+            console.log(n);
+            temp=n;
+            while(n>0)
+            {
+                r=n%10;
+                s=s*10+r;
+                n=parseInt(n/10);
+            }
+            console.log("reverse number of "+ temp +" is: "+s)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            var a=[21,2,43,12,34],temp=0;
+            for(var i=0;i<a.length;i++){
+                for(var j=i;j>0;j--){
+                    if(a[j-1]>a[j])
+                    {
+                        temp=a[j];
+                        a[j]=a[j-1];
+                        a[j-1]=temp;
+                    }
+                }  
+            }
+            console.log(a);
+
+        </script>
+    </body>
+</html>

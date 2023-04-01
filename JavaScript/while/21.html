@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            var n=prompt(), i, chk=0;
+            n=Number(n);
+            for(i=1; i<=n; i++)
+            {
+                if(n%i==0)
+                {
+                    chk++;
+                }
+            }
+            if(chk===2){
+                console.log(n,'is a prime number.');
+            }
+            else{
+                console.log(n,'is not a prime number.')
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>    </head>
+    
+    <body>
+        
+        <button id="b1" onclick="chg()">white</button>
+        <script>
+            var i=0;
+            function a(){
+                var butt= document.getElementById("b1");
+                butt.innerText= "green";
+                butt.style.backgroundColor= 'green';
+                i++;
+            }
+
+            function b(){
+                var butt= document.getElementById("b1");
+                butt.innerText= "white";
+                butt.style.backgroundColor= 'white';
+                i++;
+            }
+
+            function chg(){
+                if(i%2===0){
+                    butt2= a();
+                }
+                else{
+                    butt2= b();
+                }
+            }            
+        </script>
+    </body>
+</html>

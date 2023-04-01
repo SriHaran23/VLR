@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script
+        crossorigin
+        src="https://unpkg.com/react@18/umd/react.development.js"
+        ></script>
+        <script
+        crossorigin
+        src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+        ></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>Document</title>
+        <style>
+            #a{
+                border: 2px solid;
+                background-color: skyblue;
+                margin: 20px;
+                width: 300px;
+                height: 150px;
+                padding: 20px;
+            }
+            #c{
+                text-align: center;
+            }
+            #d{
+                margin-right: 10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="d1"></div>
+        <script type="text/babel">
+            var employees = [
+                {
+                    id: 1,
+                    firstName: "Tom",
+                    lastName: "Cruise",
+                    salary: 50000
+                },
+                {
+                    id: 2,
+                    firstName: "Maria",
+                    lastName: "Sharapova",
+                    salary: 80000
+                },
+                {
+                    id: 3,
+                    firstName: "James",
+                    lastName: "Bond",
+                    salary: 90000
+                }
+            ]
+            var card= employees.map((emp)=>{
+                return(<div id="a">
+                        <p id="b">{emp.id}</p>
+                        <p id="c">
+                            <span id="d">{emp.firstName}</span>
+                            <span>{emp.lastName}</span>
+                        </p>
+                        <p id="c">{emp.salary}</p>
+                    </div>)
+                
+            })
+            ReactDOM.render(card,document.getElementById("d1"))
+
+        </script>
+    </body>
+</html>

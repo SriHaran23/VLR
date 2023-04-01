@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+            function num(a){
+                var chk = 0;
+                while(a>0){
+                    a=parseInt(a/10);
+                    chk= chk+1
+                }
+                return chk;
+            }
+
+            var x= num(+prompt());
+            console.log(x);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div>
+            <h2 style="padding: 10px;">ADD STUDENTS</h2>
+            <input type="text" id="input" placeholder="Add Students...">
+            <button onclick="newElement()" >Add</button>
+        </div>
+
+        <ul id="myUL">
+            
+        </ul>
+
+        <script>
+            function newElement() {
+                var li = document.createElement("li");
+                var inputValue = document.getElementById("input").value;
+                var a = document.createTextNode(inputValue);
+                li.appendChild(a);
+                if (inputValue === '') {
+                    alert("You must write something!");
+                } else {
+                    document.getElementById("myUL").appendChild(li);
+                }
+                document.getElementById("input").value = "";
+            }
+        </script>
+
+    </body>
+</html>

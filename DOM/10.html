@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <style>
+            #card{
+                border: 2px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2 style="padding: 10px;">Contact Form</h2>
+            <div style="padding: 10px;">
+                <label for="name">Name:</label>
+                <input type="text" id="input" placeholder="">
+            </div>
+            <div style="padding: 10px;">
+                <label for="number" >Number:</label>
+                <input type="number" id="input1" placeholder="">
+            </div>
+            <div style="padding: 10px;">
+                <label for="mail">Email:</label>
+                <input type="text" id="input2" placeholder="">
+            </div>
+            <div style="padding: 10px;">
+                <label for="image">Image:</label>
+                <input type="file" id="input3">
+            </div>
+            <button onclick="newElement()">Add</button>
+        </div>
+        <div>
+            <img id="img" src="image()" alt="">
+        </div>
+
+        <div id="card"></div>
+
+        <script>
+            function name() {
+                var li = document.createElement("li");
+                var inputValue = document.getElementById("input").value;
+                var a = document.createTextNode(inputValue);
+                li.appendChild(a);
+                if (inputValue === '') {
+                    alert("You must write something!");
+                } else {
+                    document.getElementById("card").appendChild(li);
+                }
+                document.getElementById("input").value = "";
+            }
+            function number() {
+                var li = document.createElement("li");
+                var inputValue = document.getElementById("input1").value;
+                var a = document.createTextNode(inputValue);
+                li.appendChild(a);
+                if (inputValue === '') {
+                    alert("You must write something!");
+                } else {
+                    document.getElementById("card").appendChild(li);
+                }
+                document.getElementById("input1").value = "";
+            }
+            function mail() {
+                var li = document.createElement("li");
+                var inputValue = document.getElementById("input2").value;
+                var a = document.createTextNode(inputValue);
+                li.appendChild(a);
+                if (inputValue === '') {
+                    alert("You must write something!");
+                } else {
+                    document.getElementById("card").appendChild(li);
+                }
+                document.getElementById("input2").value = "";
+            }
+            function image() {
+                var li = document.createElement("li");
+                var inputValue = document.getElementById("input3").value;
+                var a = document.createTextNode(inputValue);
+                li.appendChild(a);
+                if (inputValue === '') {
+                    alert("You must write something!");
+                } else {
+                    document.getElementById("card").appendChild(li);
+                }
+                document.getElementById("input3").value = "";
+                
+            }
+            function newElement(){
+                var w= name();
+                var x= number();
+                var y= mail();
+                var i= image();
+            }
+        </script>
+
+    </body>
+</html>

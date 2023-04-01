@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+            #box{
+                width: 500px;
+                height: 500px;
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div><p id="box"></p></div>
+        <button id="b1" onclick="chg1()">ON</button>
+        <button id="b2" onclick="chg2()">OFF</button>
+        <script>
+            var i=0;
+            function a(){
+                var btn= document.getElementById("b1");
+                btn.style.backgroundColor= 'red';
+                btn= document.getElementById("b2");
+                btn.style.backgroundColor= 'white';
+                var box= document.getElementById("box");
+                box.style.backgroundColor= 'yellow';
+                i++;
+            } 
+
+            function b(){
+                var btn= document.getElementById("b1");
+                btn.style.backgroundColor= 'white';
+                btn= document.getElementById("b2");
+                btn.style.backgroundColor= 'red';
+                var box= document.getElementById("box");
+                box.style.backgroundColor= 'white';
+                i--;
+            }
+            
+            function chg1(){
+                if(i<1){
+                    butt2= a();
+                }
+            }
+            function chg2(){
+                if(i===1){
+                    butt2= b();
+                }
+            }            
+        </script>
+    </body>
+</html>

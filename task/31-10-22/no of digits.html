@@ -1,0 +1,44 @@
+<html>
+    <body>
+        <script>
+            var num=prompt(),i=0,temp=num,a,count=0,even_count=0,odd_count=0
+            num=Number(num);
+            console.log(num);
+            while(num>=1)
+            {
+                num=num/10;
+                i++;
+            }
+            console.log('no.of digits:',i);
+
+
+            num=temp;
+            while(num>0){
+                a=num%10;
+                if(a==0){
+                    count++;
+                }
+                num=parseInt(num/10);
+            }
+            console.log("number of zero:",count);
+
+
+            num=temp;
+            count=0;
+            while(num>0)
+            {
+                a = num % 10;
+                if(a>0)
+                {
+                    if (a % 2 === 0)
+                        even_count++;
+                    else
+                        odd_count++;
+                }
+                num =parseInt(num / 10);
+            }
+            console.log('even digits in given number:',even_count);
+            console.log('odd digits in given number:',odd_count);
+        </script>
+    </body>
+</html>

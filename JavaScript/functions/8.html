@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <script>
+            function arm(a){
+                var b=0, s=0, temp=a,c=a;
+                for(var i=0; c>0; i++){
+                    c = parseInt(c / 10);
+                }
+                while(temp>0)
+                {
+                    b=temp%10;
+                    s=s+b**i;
+                    temp=parseInt(temp/10);
+                }
+                if(s===a){
+                    return a+" is armstrong number.";
+                }
+                else{
+                    return a+" is not a armstrong number.";
+                }
+            }
+
+            var x = arm(+prompt());
+            console.log(x);
+        </script>
+    </body>
+</html>

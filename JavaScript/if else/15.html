@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <script>
+            var a=prompt(), b=prompt(), c=prompt();
+            a=Number(a);
+            b=Number(b);
+            c=Number(c);
+            if(a>b && a>c){
+                if(b>c){
+                    console.log('descending order:',a,b,c);
+                }
+                else{
+                    console.log('descending order:',a,c,b);
+                }
+            }
+            else{
+                if(b>a && b>c){
+                    if(a>c){
+                        console.log('descending order:',b,a,c);
+                    }
+                    else{
+                        console.log('descending order:',b,c,a);
+                    }
+                }
+                else{
+                    if(a>b){
+                        console.log('descending order:',c,a,b);
+                    }
+                    else{
+                        console.log('descending order:',c,b,a);
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

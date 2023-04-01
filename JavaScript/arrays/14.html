@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            var a=[23,4,1,2,6,23,4,1,2,6,23,4,1,2,6,23,4,1,2,6,23,4,1,2,6],b=[];
+            for(var j=0;j<=a.length-1;j++){
+                for(var i=0;i<a.length;i++){
+                    a[j]=a[i];
+                    i++;
+                    if(a[j]!==a[i]){
+                        b.push(a[j]);
+                    }
+                }
+            }
+            for(var i=0;i<=a.length-1;i++){
+                console.log(b[i]);
+            }
+        </script>
+    </body>
+</html>

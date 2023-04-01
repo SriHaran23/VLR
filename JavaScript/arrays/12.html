@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            var arr=[23,4,1,2,6,54,3234,654,4654,32,456,543,4,23,23,5,43,4,5,43];
+            var chk=0,m=1,item;
+            for(var i=0;i<=arr.length-1;i++){
+                for(j=i;j<arr.length;j++){
+                    if(arr[i]===arr[j]){
+                        chk++;
+                    }
+                    if(m<chk){
+                        m=chk;
+                        item=arr[i];
+                    }
+                }
+                chk=0;
+            }
+            console.log(item +" is found "+m+" times");
+        </script>
+    </body>
+</html>

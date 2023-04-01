@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <script>
+            function rev(a){
+                var b, sum = 0;
+                while(a>0){
+                    b = a % 10;
+                    sum = sum * 10 + b;
+                    a = parseInt(a / 10);
+                }
+                return sum;
+            }
+
+            var x = rev(+prompt());
+            console.log(x);
+        </script>
+    </body>
+</html>

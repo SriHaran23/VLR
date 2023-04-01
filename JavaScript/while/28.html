@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            var n,s=0,r=0,temp;
+            n=+prompt();
+            console.log(n);
+            temp=n;
+            while(n>0)
+            {
+                r=n%10;
+                s=s+r*r*r;
+                n=parseInt(n/10);
+            }
+            if(s==temp){
+                console.log(s + "is armstrong number");
+            }
+            else{
+            console.log(s + "is not armstrong number");
+            }
+        </script>
+    </body>
+</html>

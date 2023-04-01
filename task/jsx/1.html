@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script
+        crossorigin
+        src="https://unpkg.com/react@18/umd/react.development.js"
+        ></script>
+        <script
+        crossorigin
+        src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"0
+        ></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="d1"></div>
+        <img id="d2" src="" alt="">
+        <script type="text/babel">
+            var employees = [
+                {
+                    img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtsHSsU13vuSiaE43BPJpzLjkJQ4uOGyl1Hw&usqp=CAU",
+                    firstName: "Tom",
+                    lastName: "Cruise",
+                    salary: 50000
+                },
+                {
+                    img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtsHSsU13vuSiaE43BPJpzLjkJQ4uOGyl1Hw&usqp=CAU",
+                    firstName: "Maria",
+                    lastName: "Sharapova",
+                    salary: 80000
+                },
+                {
+                    img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtsHSsU13vuSiaE43BPJpzLjkJQ4uOGyl1Hw&usqp=CAU",
+                    firstName: "James",
+                    lastName: "Bond",
+                    salary: 90000
+                }
+            ]
+            var card= employees.map((emp)=>{
+                return(<div style={{border:"2px solid", margin:"10px", width:"300px", height:"150px", backgroundColor:"skyblue" }}>
+                        <img src="{emp.img}" alt=""/>
+                        <p style={{paddingLeft:"10px"}}>{emp.id}</p>
+                        <p style={{textAlign:"center"}}>
+                            <span style={{marginRight:"10px"}}>{emp.firstName}</span>
+                            <span>{emp.lastName}</span>
+                        </p>
+                        <p style={{textAlign:"center"}}>{emp.salary}</p>
+                    </div>)
+                
+            })
+            ReactDOM.render(card,document.getElementById("d1"))
+
+        </script>
+    </body>
+</html>

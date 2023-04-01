@@ -1,0 +1,43 @@
+<html>
+    <head>    </head>
+    
+    <body>
+        <h1>Like and Dislike Button</h1>
+        <div>
+            <input type="button" value="Like" id="a1" onclick="chg1()" style="background-color: green; padding:10;">
+            <b id="b1" style="margin-left: 30;">0</b>
+        </div><br>
+        <div>
+            <input type="button" value="Dislike" id="a2" onclick="chg2()"  style="background-color: red; padding:10;">
+            <b id="b2" style="margin-left: 15;">0</b>
+        </div>
+        <script>
+            var i=1;
+            var j=1;
+            function a(){
+                var btn= document.getElementById("a1");
+                var x= document.getElementById("b1");
+                x.innerText= i;
+                i++;
+            } 
+
+            function b(){
+                var btn= document.getElementById("a2");
+                var y= document.getElementById("b2");
+                y.innerText= j;
+                j++;
+            }
+            
+            function chg1(){
+                if(i>=0){
+                    butt2= a();
+                }
+            }
+            function chg2(){
+                if(j>=0){
+                    butt2= b();
+                }
+            }            
+        </script>
+    </body>
+</html>

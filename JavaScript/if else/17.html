@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <script>
+            var tel=prompt(),hin=prompt(),eng=prompt(), total, per;
+            tel=Number(tel),hin=Number(hin),eng=Number(eng);
+            total=tel + hin + eng;
+            console.log('Total:',total);
+            per=(total/300)*100;
+            console.log('Percentage:',per)
+            if(per>=90){
+                console.log('grade: O')
+            }
+            else if(per>=80 && per<90){
+                console.log('grade: S')
+            }
+            else if(per>=70 && per<80){
+                console.log('grade: A')
+            }
+            else if(per>=60 && per<70){
+                console.log('grade: B')
+            }
+            else if(per>=50 && per<60){
+                console.log('grade: C')
+            }
+            else if(per>=40 && per<50){
+                console.log('grade: D')
+            }
+            else{
+                console.log('grade: F')
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            var r = +prompt(),space,i,j;
+            for(i=0; i<r; i++)
+            {
+                col=1;
+                for(space=1; space <= r-i; space++)
+                    document.write("  ");
+                for(j=0; j <= i; j++)
+                {
+                    if (j==0 || i==0)
+                        col = 1;
+                    else
+                        col = col*(i-j+1)/j;
+                        document.write(col);
+                }
+            }
+        </script>
+    </body>
+</html>

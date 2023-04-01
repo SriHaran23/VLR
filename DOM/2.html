@@ -1,0 +1,31 @@
+<html>
+    <head>    </head>
+    
+    <body>
+        <button onclick="chg()">Toogle</button>
+        <p id="b1">True</p>
+        <script>
+            var i=1;
+            function a(){
+                var butt= document.getElementById("b1");
+                butt.innerText= "False";
+                i--;
+            }
+
+            function b(){
+                var butt= document.getElementById("b1");
+                butt.innerText= "True";
+                i++;
+            }
+
+            function chg(){
+                if(i===1){
+                    butt2= a();
+                }
+                else{
+                    butt2= b();
+                }
+            }            
+        </script>
+    </body>
+</html>
